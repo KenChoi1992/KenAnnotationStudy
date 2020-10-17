@@ -1,0 +1,3 @@
+include ':permissionlib'
+include ':app'
+rootProject.name = "KenAnnotationStudy"
