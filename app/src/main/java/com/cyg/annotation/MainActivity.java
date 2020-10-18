@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import com.cyg.permissionlib.annotation.ClickInterval;
 import com.cyg.permissionlib.annotation.PermissionCancel;
 import com.cyg.permissionlib.annotation.PermissionDenied;
 import com.cyg.permissionlib.annotation.PermissionGranted;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         TextView textView = findViewById(R.id.textView);
         textView.setOnClickListener(new View.OnClickListener() {
+            @ClickInterval()
             @Override
             public void onClick(View v) {
                 requestPermission();

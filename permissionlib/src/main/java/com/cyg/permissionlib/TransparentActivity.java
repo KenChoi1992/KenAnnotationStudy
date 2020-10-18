@@ -26,6 +26,7 @@ public class TransparentActivity extends Activity {
                 if (PermissionUtil.hasPermissions(this, permissions)) {
                     if (PermissionUtil.sCallback != null) {
                         PermissionUtil.sCallback.permissionGranted();
+                        finish();
                         return;
                     }
                 }
