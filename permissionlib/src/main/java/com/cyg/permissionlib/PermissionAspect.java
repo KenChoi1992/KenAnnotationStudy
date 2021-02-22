@@ -37,7 +37,7 @@ public class PermissionAspect {
      * ConstructorPattern [!][@Annotation][public/protected/private][static/final][类名.]new(参数类型列表)[throws 异常类型]
      * FieldPattern [!][@Annotation][public/protected/private][static/final]属性类型[类名.]属性名
      * TypePattern 其他 Pattern 涉及到的类型规则也是一样，可以使用 '!'、''、'..'、'+'，'!' 表示取反，
-     * '' 匹配除 . 外的所有字符串，'*' 单独使用事表示匹配任意类型，'..' 匹配任意字符串，
+     * '' 匹配除 . 外的所有字符串，'*' 单独使用事表示匹配除了 '.' 以外的任意类型，'..' 表示任意子 package，
      * '..' 单独使用时表示匹配任意长度任意类型，'+' 匹配其自身及子类，还有一个 '...'表示不定个数
      *
      * @param permissionRequest
